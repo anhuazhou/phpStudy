@@ -1,0 +1,45 @@
+{layout name="layout"/}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>follow</title>
+</head>
+<body>
+    <div style="text-align: center;"><h1>更换教练</h1></div>
+    <div class="box-content">
+        <form role="form" action="http://www.zhouyf.com/index/Homepage/followAgain" method="post">
+            <input type="hidden" name="studentId" value="{$data.studentId}">
+            <div class="form-group">
+                <label for="exampleInputName">学员姓名</label>
+                <input type="text" class="form-control" id="studentname" name="studentname" value="{$data.studentname}"
+                readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPhone">电话</label>
+                <input type="text" class="form-control" id="phone" name="phone" value="{$data.phone}"
+                readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputCoach">原跟随教练</label>
+                <input type="text" class="form-control" id="coachname" name="coachname" value="{$teach.coachname}"
+                readonly>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="selectError">选择教练</label>
+                <br>
+                    <select id="selectError" data-rel="chosen" name="coachname">
+                        {foreach $coach as $aa}
+                        <option value="{$aa.coachname}">{$aa.coachname}</option>
+                        {/foreach}
+                    </select>
+            </div>
+            
+            <button type="submit" class="btn btn-default submit">点击提交</button>
+           
+           
+        </form> <a href="http://www.zhouyf.com/lookStudent"><button class="btn btn-default back">取消操作</button></a>
+
+    </div>
+</body>
+</html>

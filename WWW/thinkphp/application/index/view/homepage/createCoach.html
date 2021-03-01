@@ -1,0 +1,33 @@
+{layout name="layout"}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createCoach</title>
+</head>
+<body>
+    <div style="text-align: center;"><h1>创建教练账户</h1></div>
+    <div class="box-content">
+        <form role="form" action="http://www.zhouyf.com/index/Homepage/createCoachTrue" method="post">
+            <div class="form-group">
+                <label for="exampleInputName">用户名</label>
+                <input type="text" class="form-control" id="coachname" name="coachname" value="{$data.coachname}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPwd">密码</label>
+                <input type="password" class="form-control" id="coachpwd" name="coachpwd" placeholder="密码"
+                required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPwd">确认密码</label>
+                <input type="password" class="form-control" id="coachpwdre" name="coachpwdre" placeholder="确认密码"
+                required>
+            </div>
+            
+            <button type="submit" class="btn btn-default">点击提交</button>
+        </form>
+
+    </div>
+</body>
+</html>

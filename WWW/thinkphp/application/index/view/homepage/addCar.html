@@ -1,0 +1,34 @@
+{layout name="layout"/}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addCar</title>
+</head>
+<body>
+    <div style="text-align: center;"><h1>填写教练车信息</h1></div>
+    <div class="box-content">
+        <form role="form" action="http://www.zhouyf.com/index/Homepage/addCarTrue" method="post">
+            <div class="form-group">
+                <label for="exampleInputLicense">车辆牌照</label>
+                <input type="text" class="form-control" id="license" name="license" placeholder="车辆牌照">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="selectError">车辆类型</label>
+                <br>
+                    <select id="selectError" data-rel="chosen" name="type">
+                        
+                        <option value="C1">C1</option>
+                        <option value="C2">C2</option>
+                        
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputDescribe">车辆描述</label>
+                <input type="text" class="form-control" id="describe" name="describe" placeholder="车辆描述">
+            </div>
+            <button type="submit" class="btn btn-default">点击提交</button>
+        </form>
+    </div>
+</body>
+</html>

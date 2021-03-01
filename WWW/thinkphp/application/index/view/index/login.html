@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>驾校前台信息管理系统</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .loginwindow {
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            background-color: rgba(248, 248, 255, 0.5);   
+            box-shadow: 0px 0px 0px 0px;
+            transition: all 0.15s linear;
+        }
+        .loginwindow:hover{
+            /* transform: translate(0px,-1px); */
+            box-shadow: 0px 5px 10px 0px black;
+        }
+        p {
+            text-align: center;
+        }
+        .btnlogin {
+            width: 239px;
+            height: 29px;
+            display: inline-block;
+            font-family: Arial,Verdana,Sans-serif;
+            font-size: 17px;
+        }
+        .btnlogin:hover {
+            background-color: cornflowerblue;
+            color: white;
+        }
+        input{
+            border:1px solid gray;
+            height: 25px;
+            border-radius: 5px;
+
+        }
+        .drHeader{
+            letter-spacing: 7px;
+            font-size: 17px;
+        }
+        .background{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .window{
+            width: 100%;
+            height: 100%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="window">
+        <img src="__IMG__/login.jpg" alt="no" class="background">
+        <div class="loginwindow">
+            <form action="index/index/check" method="post">
+               <p class="drHeader">驾校前台信息管理系统</p>
+               <p>用户名：<input type="text" id="name" name="name" required></p>
+               <p>密&nbsp&nbsp&nbsp码：<input type="password" id="pwd" name="pwd" required></p>
+               <p><input type="submit" value="登  录" class="btnlogin" ></p>
+           </form>
+       </div>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

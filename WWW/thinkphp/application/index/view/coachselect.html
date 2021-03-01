@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link id="bs-css" href="__CSS__/bootstrap-cerulean.min.css" rel="stylesheet">
+
+    <link href="__CSS__/charisma-app.css" rel="stylesheet">
+    <link href='__MASTER__/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+    <link href='__MASTER__/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link href='__MASTER__/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='__MASTER__/colorbox/example3/colorbox.css' rel='stylesheet'>
+    <link href='__MASTER__/responsive-tables/responsive-tables.css' rel='stylesheet'>
+    <link href='__MASTER__/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+    <link href='__CSS__/jquery.noty.css' rel='stylesheet'>
+    <link href='__CSS__/noty_theme_default.css' rel='stylesheet'>
+    <link href='__CSS__/elfinder.min.css' rel='stylesheet'>
+    <link href='__CSS__/elfinder.theme.css' rel='stylesheet'>
+    <link href='__CSS__/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='__CSS__/uploadify.css' rel='stylesheet'>
+    <link href='__CSS__/animate.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="__CSS__/bootstrap.min.css">
+    <script src="__MASTER__/jquery/jquery.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 10%;
+            position: absolute;
+
+        }
+
+        .main {
+            top: 10%;
+            width: 100%;
+            height: 90%;
+            position: absolute;
+        }
+
+        .nav {
+            width: 10%;
+            height: 100%;
+            /* border-right: 1px solid gray; */
+            float: left;
+            overflow-y: scroll;
+        }
+
+        .nav::-webkit-scrollbar {
+            /*隐藏滚轮*/
+            display: none;
+        }
+
+        .mainpage {
+            width: 90%;
+            height: 100%;
+            float: left;
+            overflow-y: scroll;
+        }
+
+        .btn-group-vertical {
+
+            width: 100%;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 100%;
+            border-radius: 0px;
+        }
+
+        .home {
+            height: 50px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        .select{
+            height: 10%;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-default ">
+            <div class="containe">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">{$name}</a>
+                </div>
+                <div>
+                    <button><a href="http://www.zhouyf.com/index/Index/logout">退出登录</a></button>
+                </div>
+            </div><!-- /.navbar-collapse -->
+    </div>
+    <div class="main">
+        <div class="nav">
+            <div class="btn-group-vertical" role="group" aria-label="...">
+                <button type="button" class="btn btn-default home" style="border: none;">
+                    <a href="http://www.zhouyf.com/coachAdmin" style="text-decoration: none;">首页</a> </button>
+                <button type="button" class="btn btn-default home" style="border: none;">
+                    <a href="http://www.zhouyf.com/coneStd" style="text-decoration: none;">C1学员</a> </button>
+                <button type="button" class="btn btn-default home" style="border: none;">
+                    <a href="http://www.zhouyf.com/ctwoStd" style="text-decoration: none;">C2学员</a> </button>
+                <button type="button" class="btn btn-default home" style="border: none;">
+                    <a href="http://www.zhouyf.com/select" style="text-decoration: none;">学员搜索</a> </button>
+
+
+            </div>
+        </div>
+        <div class="mainpage">
+            <div class="select">
+                <form class="navbar-form navbar-left" action="http://www.zhouyf.com/index/Coachpage/selectStd"
+                 method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="学员搜索/输入姓名" name="studentname"
+                         id="studentname">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+            </div>
+            {__CONTENT__}
+
+
+        </div>
+    </div>
+    <script src="__MASTER__/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+{layout name="layout" /}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viewStudent</title>
+</head>
+
+<body>
+    <div style="text-align: center;"><h1>{$data.studentname}学员详细信息</h1></div>
+    
+    <div class="box col-md-12">
+        <div class="box-inner">
+            <div class="box-content">
+                <!-- <div class="alert alert-info">For help with such table please check <a href="http://datatables.net/" target="_blank">http://datatables.net/</a></div> -->
+                <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
+                    <thead>
+                        <tr>
+                            <th>学员编号</th>
+                            <th>学员姓名</th>
+                            <th>性别</th>
+                            <th>电话</th>
+                            <th>入学日期</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{$data.studentId}</td>
+                            <td>{$data.studentname}</td>
+                            <td class="center">{$data.sex}</td>
+                            <td class="center">{$data.phone}</td>
+                            <td class="center">
+                                <span class="label-success label label-default">{$data.create_time}</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>科目一</th>
+                            <th>科目一通过时间</th>
+                            <th>科目二</th>
+                            <th>科目二通过时间</th>
+                            <th>上次信息更新</th>
+                            
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center">{$data2.classone}</td>
+                            <td class="center"><span class="label-success label label-default">{$data2.classonetime}</span></td>
+                            <td class="center">{$data2.classtwo}</td>
+                            <td class="center"><span class="label-success label label-default">{$data2.classtwotime}</span></td>
+                            <td class="center"><span class="label-success label label-default">{$data.update_time}</span></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>科目三</th>
+                            <th>科目三通过时间</th>
+                            <th>科目四</th>
+                            <th>科目四通过时间</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center">{$data2.classthree}</td>
+                            <td class="center"> <span class="label-success label label-default">{$data2.classthreetime}</span></td>
+                            <td class="center">{$data2.classfour}</td>
+                            <td class="center"> <span class="label-success label label-default">{$data2.classfourtime}</span></td>
+                            
+                        </tr>
+                        
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>驾照类型</th>
+                            <th>教练</th>
+                            <th>操作</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center">{$data.type}</td>
+                            <td class="center">{$data3.coachname}</td>
+                            <td class="center"><a class="btn btn-info" href="http://www.zhouyf.com/lookStudent">
+                                <i class="glyphicon glyphicon-edit icon-white"></i>
+                                返回
+                            </a></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

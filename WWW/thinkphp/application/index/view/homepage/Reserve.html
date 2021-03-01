@@ -1,0 +1,40 @@
+{layout name="layout"}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve</title>
+    <link rel="stylesheet" href="__CSS__/dcalendar.picker.css" />
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>练车预约</h1>
+    </div>
+    <div class="box-content">
+        <form role="form" action="http://www.zhouyf.com/index/Homepage/studentReserve" method="post">
+            <div class="form-group">
+                <label for="exampleInputName">填写学员姓名</label>
+                <input type="text" class="form-control" id="studentname" name="studentname" placeholder="姓名">
+            </div>
+            <div class="form-group">
+                <label>选择预约时间</label>
+                <p></p>
+                <input id='mydatepicker2' class="form-control" type='text' name="restime" />
+            </div>
+            <button type="submit" class="btn btn-default">下一步</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="__JS__/dcalendar.picker.js"></script>
+    <script type="text/javascript">
+        $('#mydatepicker').dcalendarpicker();
+        $('#mydatepicker2').dcalendarpicker({
+            format: 'yyyy-mm-dd'
+        });
+        $('#mycalendar').dcalendar();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+{layout name="layout"/}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>editCar</title>
+</head>
+<body>
+    <div class="h1"><h1>编辑教练车信息</h1></div>
+    
+    <div class="box-content">
+        <form role="form" action="http://www.zhouyf.com/updateCar" method="post">
+            <input type="hidden" name="carId" value="{$data.carId}">
+            <div class="form-group">
+                <label for="exampleInputName">车辆牌照</label>
+                <input type="text" class="form-control" id="license" name="license" value="{$data.license}">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPhone">描述</label>
+                <input type="text" class="form-control" id="describe" name="describe" value="{$data.describe}">
+            </div>
+
+           
+            <button type="submit" class="btn btn-default submit">点击提交</button>
+           
+           
+        </form> <a href="http://www.zhouyf.com/Car"><button class="btn btn-default back">取消操作</button></a>
+
+    </div>
+</body>
+</html>

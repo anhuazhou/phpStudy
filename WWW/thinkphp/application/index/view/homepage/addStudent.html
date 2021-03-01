@@ -1,0 +1,49 @@
+{layout name="layout" /}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addStudent</title>
+    <style>
+        .h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;"><h1>填写信息</h1></div>
+    <div class="box-content">
+        <form role="form" action="http://www.zhouyf.com/index/Homepage/addStudentTrue" method="post">
+            <div class="form-group">
+                <label for="exampleInputName">填写学员姓名</label>
+                <input type="text" class="form-control" id="studentname" name="studentname" placeholder="姓名">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPhone">填写电话</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="电话">
+            </div>
+            <div class="checkbox">
+                <label >性别：</label>
+                <label>
+                    <input type="checkbox" name="sex" value="男"> 男
+                </label>
+                <label>
+                    <input type="checkbox" name="sex" value="女"> 女
+                </label>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="selectError">学习类型</label>
+                <br>
+                    <select id="selectError" data-rel="chosen" name="type">
+                        
+                        <option value="C1">C1</option>
+                        <option value="C2">C2</option>
+                        
+                    </select>
+            </div>
+            <button type="submit" class="btn btn-default">点击提交</button>
+        </form>
+
+    </div>
+</body>
+</html>
